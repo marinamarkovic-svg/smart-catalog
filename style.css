@@ -1,0 +1,25 @@
+body{
+    background-color:rgb(221, 219, 204);
+    font-family:cursive;
+}
+
+.container{
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.book-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+.book-card{
+    background-color: rgb(185, 183, 128);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+}
