@@ -17,9 +17,29 @@ gap: 20px;
     list-style-type: none;
 }
 .book-card{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(185, 183, 128);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     transition: transform 0.2s;
 }
+
+.add-to-cart{
+    display: block;
+    margin: auto auto 0;
+    padding: 10px 18px;
+    border: 1px solid rgb(122, 121, 78);
+    border-radius: 8px;
+    background-color: rgb(221, 219, 204);
+    color: rgb(68, 67, 43);
+    font: inherit;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart:hover{
+    background-color: rgb(244, 242, 226);
+}
+

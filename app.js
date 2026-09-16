@@ -7,19 +7,24 @@ const books = [
 ];
 
 const bookList = document.getElementById("book-list");
-books.forEach(function(book) {
-    const card = document.createElement("div");
-    card.className = "book-card";
 
+function renderProducts(items) {
+    bookList.innerHTML = "";
 
- card.innerHTML = `
-<h2>${book.title}</h2>
-<p><strong>Author:</strong> ${book.author}</p>
-<p><strong>Genre:</strong> ${book.genre}</p>
-<p><strong>Year:</strong> ${book.year}</p>
-`;
+    items.forEach(function(book) {
+        const card = document.createElement("div");
+        card.className = "book-card";
 
+        card.innerHTML = `
+            <h2>${book.title}</h2>
+            <p><strong>Author:</strong> ${book.author}</p>
+            <p><strong>Genre:</strong> ${book.genre}</p>
+            <p><strong>Year:</strong> ${book.year}</p>
+            <button class="add-to-cart">Add to Cart</button>
+        `;
 
-    bookList.appendChild(card);
+        bookList.appendChild(card);
+    });
+}
 
-});
+renderProducts(books);
