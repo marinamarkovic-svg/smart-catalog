@@ -1,6 +1,6 @@
 body{
     background-color:rgb(221, 219, 204);
-    font-family:cursive;
+    font-family: Arial, sans-serif;
 }
 
 .container{
@@ -19,7 +19,7 @@ gap: 20px;
 .book-card{
     display: flex;
     flex-direction: column;
-    background-color: rgb(185, 183, 128);
+    background: mediumteal;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -39,7 +39,5 @@ gap: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.add-to-cart:hover{
-    background-color: rgb(244, 242, 226);
-}
+
 
